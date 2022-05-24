@@ -1,3 +1,22 @@
 https://github.com/Professor1935/WAD_Lab
 https://github.com/Manishvv10/mern_chat_app
 https://github.com/harshalcse/cc-practicles
+
+ steps:
+ 1  create folder node_static.
+ 2  create folder public inside public insert your index.html.
+ 3  create file app.js inside node_static folder.
+ 
+ commands:
+ npm install
+ npm i express
+ npm audit fix
+ node app.js
+
+const express = require('express');
+const app = express();
+
+app.use(express.static('public'));
+app.listen(3000, () => {
+console.log('Application is started');
+})
